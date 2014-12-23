@@ -1,0 +1,15 @@
+# Site settings
+title: Suprnovae
+email: hi@supr.nu
+description: > # this means to ignore newlines until "baseurl:"
+  The engineering agency that delights in building great apps to solve real
+  problems, sculpting scalable infrastructures to host the most flexible and
+  durable services and providing that level of support that has our customers 
+  sleeping well every night, regardless of upcoming challenges.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://supr.nu" # the base hostname & protocol for your site
+twitter_username: suprnovae
+github_username:  suprnovae
+
+# Build settings
+markdown: kramdown
