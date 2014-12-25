@@ -1,0 +1,91 @@
+---
+layout: page
+---
+<div class="container" id="blog-content2">
+  <div class="row">
+    {% for post in site.posts %}
+    <article class="featured col-md-{% if post.colwidth %}{{ post.colwidth }}{% else %}4{% endif %}">
+      <div class="blog2 col-md-12">
+        <img src="{{ post.image }}" class="img-responsive" alt=""/>
+        <div class="excerpt">
+          <h5><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
+          <div class="blog2-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+
+    <article class="col-md-4">
+      <div class="blog2 col-md-12">
+        <img src="/images/content/blog/2/2.jpg" class="img-responsive" alt=""/>
+        <div class="excerpt">
+          <h4><a href="#">Mollis Cursus Parturient Bibendum Condimentum</a></h4>
+          <div class="blog2-date">October 30th, 2014</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-4">
+      <div class="blog2 col-md-12">
+        <img src="/images/content/blog/2/3.jpg" class="img-responsive" alt=""/>
+        <div class="excerpt">
+          <h4><a href="#">Bibendum Mattis Mollis Tellus Vulputate Purus Venenatis</a></h4>
+          <div class="blog2-date">October 28th, 2014</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-4">
+      <div class="blog2 col-md-12">
+        <img src="/images/content/blog/2/4.jpg" class="img-responsive" alt=""/>
+        <div class="excerpt">
+          <h4><a href="#">Adipiscing Tortor Tristique Ligula Fermentum</a></h4>
+          <div class="blog2-date">October 21st, 2014</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-4">
+      <div class="blog2 col-md-12">
+        <img src="/images/content/blog/2/5.jpg" class="img-responsive" alt=""/>
+        <div class="excerpt">
+          <h4><a href="#">Venenatis Amet Nullam Bibendum Risus</a></h4>
+          <div class="blog2-date">October 21st, 2014</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-4">
+      <div class="blog2 col-md-12">
+        <img src="/images/content/blog/2/6.jpg" class="img-responsive" alt=""/>
+        <div class="excerpt">
+          <h4><a href="#">Bibendum Mattis Mollis Tellus Vulputate Purus Venenatis</a></h4>
+          <div class="blog2-date">October 28th, 2014</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-4">
+      <div class="blog2 col-md-12">
+        <img src="/images/content/blog/2/7.jpg" class="img-responsive" alt=""/>
+        <div class="excerpt">
+          <h4><a href="#">Adipiscing Tortor Tristique Ligula Fermentum</a></h4>
+          <div class="blog2-date">October 21st, 2014</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-4">
+      <div class="blog2 col-md-12">
+        <img src="/images/content/blog/2/8.jpg" class="img-responsive" alt=""/>
+        <div class="excerpt">
+          <h4><a href="#">Venenatis Amet Nullam Bibendum Risus</a></h4>
+          <div class="blog2-date">October 21st, 2014</div>
+        </div>
+      </div>
+    </article>
+
+    <div class="clearfix"></div>
+    <a href="#" class="btn-small btn-center">Load More</a>
+  </div>
+</div>

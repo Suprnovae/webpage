@@ -1,0 +1,39 @@
+<div class="container home-projects">
+  <div class="row">
+    <div class="col-md-12" id="portfolio">
+      <div class="row">
+        <div class="col-md-5">
+          <h3 class="uppercase">Latest Works</h3>
+        </div>
+        <div class="col-md-7">
+          <ul id="filters" class="clearfix project-filter" data-option-key="filter">
+            <li><a href="#filter" class="active" data-option-value="*">All</a></li>
+            <li><a href="#filter" data-option-value=".dev">Development</a></li>
+            <li><a href="#filter" data-option-value=".ops">Operations</a></li>
+            {% if false %}<li><a href="#filter" data-option-value=".alg">Algorithms</a></li>{% endif %}
+            {% if false %}<li><a href="#filter" data-option-value=".tron">Electronics</a></li>{% endif %}
+            <li><a href="#filter" data-option-value=".cloud">Cloud Computing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="portfolio-items isotope">
+        {% for project in site.data.projects %}
+        <div class="item {{ project.type }} {{ project.tags | join ' ' }}">
+          <div class="project-item-thumb">
+            <a href="#">
+              <img src="{{ project.image }}" class="img-responsive" alt=""/>
+              <div class="works-overlay">
+                <div class="wo-inner">
+                  <h4>{{ project.name }}</h4>
+                  <div class="line-sep"></div>
+                  <p>{{ project.note }}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

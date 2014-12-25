@@ -1,0 +1,210 @@
+	<div id="slider">
+		<!-- FULLSCREEN SLIDER -->
+		<div class="tp-banner-container">
+			<div class="tp-banner" >
+				<ul>
+        {% for slide in site.data.slides %}
+					<li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"  data-title="Intro Slide">
+						<img src="/images/dummy.png"  alt="slidebg1" data-lazyload="/images/slider/1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+          {% for element in slide.elements %}
+						<div class="tp-caption lfl tp-resizeme rs-parallaxlevel-10"
+              data-x="{{element.x}}"
+              data-y="{{element.y}}" 
+              {% if element.customin %}data-customin="{{element.customin}}"{% endif %}
+              data-speed="{{element.speed}}"
+              data-start="{{element.start}}"
+              data-easing="{{element.easing}}"
+              data-splitin="{{element.splitin}}"
+              data-splitout="{{element.splitout}}"
+              data-elementdelay="{{element.elementdelay}}"
+              data-endelementdelay="{{element.endelementdelay}}"
+              data-endspeed="{{element.endspeed}}"
+              style="{% if element.style %}{{element.style}}{% else %}z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;	font-size: 100px; font-weight: bold; text-transform: uppercase; color: #fff;{% endif %}">
+              {{ element.content }}
+						</div>
+          {% endfor %}
+          </li>
+        {% endfor %}
+        {% if false %}
+					<!-- SLIDE  -->
+					<li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"  data-title="Intro Slide">
+						<img src="images/dummy.png"  alt="slidebg1" data-lazyload="images/slider/1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+						<div class="tp-caption lfl tp-resizeme rs-parallaxlevel-10"
+							data-x="130"
+							data-y="305" 
+							data-speed="700"
+							data-start="800"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="300"
+							style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;	font-size: 100px; font-weight: bold; text-transform: uppercase; color: #fff;">
+							Most Powerful
+						</div>
+						<div class="tp-caption lfl tp-resizeme rs-parallaxlevel-10"
+							data-x="130"
+							data-y="400" 
+							data-speed="700"
+							data-start="1150"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="300"
+							style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;	font-size: 100px; font-weight: bold; text-transform: uppercase; color: #fff;">
+							Theme ever.
+						</div>
+						<div class="tp-caption skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10"
+							data-x="130"
+							data-y="530"
+							data-speed="1000"
+							data-start="1400"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;	font-size: 24px; text-transform: uppercase; color: #fff;">
+							Just one click away
+						</div>
+						<div class="tp-caption customin tp-resizeme rs-parallaxlevel-0"
+							data-x="135"
+							data-y="670" 
+							data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+							data-speed="500"
+							data-start="1700"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.05"
+							data-endelementdelay="0.1"
+							style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">
+							<a href="#" class="slider-btn">Get Started</a>
+						</div>
+					</li>
+					<!-- SLIDE  -->
+					<li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"  data-title="Intro Slide">
+						<img src="images/dummy.png"  alt="slidebg1" data-lazyload="images/slider/1-2.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+						<div class="tp-caption lfl tp-resizeme rs-parallaxlevel-10"
+							data-x="130"
+							data-y="305" 
+							data-speed="700"
+							data-start="800"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="300"
+							style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;	font-size: 100px; font-weight: bold; text-transform: uppercase; color: #fff;">
+							Responsive Design
+						</div>
+						<div class="tp-caption lfl tp-resizeme rs-parallaxlevel-10"
+							data-x="130"
+							data-y="400" 
+							data-speed="700"
+							data-start="1150"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="300"
+							style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;	font-size: 100px; font-weight: bold; text-transform: uppercase; color: #fff;">
+							All devices.
+						</div>
+						<div class="tp-caption skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10"
+							data-x="130"
+							data-y="530"
+							data-speed="1000"
+							data-start="1400"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;	font-size: 24px; text-transform: uppercase; color: #fff;">
+							Just one click away
+						</div>
+						<div class="tp-caption customin tp-resizeme rs-parallaxlevel-0"
+							data-x="135"
+							data-y="670" 
+							data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+							data-speed="500"
+							data-start="1700"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.05"
+							data-endelementdelay="0.1"
+							style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">
+							<a href="#" class="slider-btn">Get Started</a>
+						</div>
+					</li>
+					<!-- SLIDE  -->
+					<li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"  data-title="Intro Slide">
+						<img src="images/dummy.png"  alt="slidebg1" data-lazyload="images/slider/1-1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+						<div class="tp-caption lfl tp-resizeme rs-parallaxlevel-10"
+							data-x="130"
+							data-y="305" 
+							data-speed="700"
+							data-start="800"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="300"
+							style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;	font-size: 100px; font-weight: bold; text-transform: uppercase; color: #fff;">
+							Creative & Clean
+						</div>
+						<div class="tp-caption lfl tp-resizeme rs-parallaxlevel-10"
+							data-x="130"
+							data-y="400" 
+							data-speed="700"
+							data-start="1150"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="300"
+							style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;	font-size: 100px; font-weight: bold; text-transform: uppercase; color: #fff;">
+							Awesome look.
+						</div>
+						<div class="tp-caption skewfromright randomrotateout tp-resizeme rs-parallaxlevel-10"
+							data-x="130"
+							data-y="530"
+							data-speed="1000"
+							data-start="1400"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;	font-size: 24px; text-transform: uppercase; color: #fff;">
+							Just one click away
+						</div>
+						<div class="tp-caption customin tp-resizeme rs-parallaxlevel-0"
+							data-x="135"
+							data-y="670" 
+							data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+							data-speed="500"
+							data-start="1700"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.05"
+							data-endelementdelay="0.1"
+							style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">
+							<a href="#" class="slider-btn">Get Started</a>
+						</div>
+					</li>
+        {% endif %}
+				</ul>
+			</div>
+		</div>
+	</div>

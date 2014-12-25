@@ -1,0 +1,21 @@
+- home:
+  name: Home
+  url: /
+
+- blog:
+  name: Blog
+  url: /blog
+
+- about:
+  name: About
+  url: /about
+
+- contact:
+  name: contact
+  url: /contact
+#  content:
+#  - a:
+#    name: a
+#    url: /something/a
+#  - b
+#  - c

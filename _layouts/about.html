@@ -1,0 +1,26 @@
+---
+layout: page
+---
+<div class="container home-welcome welcome2">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h4>{{ page.title }}</h4>
+      {% if page.headline %}
+      <p class="lite-medium">{{ page.headline }}</p>
+      {% endif %}
+      {{ content }}
+    </div>
+  </div>
+</div>
+{% if page.video %}
+<div class="home-video">
+  <video class="video-js" preload="auto" poster="images/video/2.jpg" data-setup="{}">
+      {% if page.video.mp4 %}
+      <source src="{{ page.video.mp4 }}" type="video/mp4">
+      {% endif %}
+      {% if page.video.webm %}
+			<source src="{{ page.video.webm }}" type="video/webm">
+      {% endif %}
+  </video>
+</div>
+{% endif %}

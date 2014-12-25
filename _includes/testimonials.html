@@ -1,0 +1,18 @@
+	<div class="container home-quotes">
+		<div class="col-md-12">
+			<h3 class="uppercase">Customer Testimonials</h3>
+			<p class="sub">What awesome people that use this theme think</p>
+		</div>
+		<div class="col-md-12">
+			<div class="row">
+        {% for testimonial in site.data.testimonials %}
+				<div class="col-md-4 quotes-content">
+          <p>{{ testimonial.text }}</p>
+					<h4>{{ testimonial.person }}</h4>
+					<a href="{{ testimonial.url }}" target="blank">{{ testimonial.organisation }}</a>
+				</div>
+        {% endfor %}
+			</div>
+		</div>
+	</div>
+
