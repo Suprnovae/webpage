@@ -1,0 +1,17 @@
+<div class="home-stats" data-stellar-background-ratio="0.2">
+  <div class="overlay"></div>
+  <div class="container">
+    <h3 class="uppercase">Statistics</h3>
+    <div class="row">
+    {% for stat in site.data.stats %}
+      <div class="col-md-3">
+        <h4>
+        <span id="stat_{{ stat.id }}">{{ stat.value }}</span>
+        {{ stat.name }}
+        </h4>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+

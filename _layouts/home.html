@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% if page.slider %}{% include slider.html %}{% endif %}
+{% if page.about %}{% include about.html %}{% endif %}
+{% if page.features %}{% include features.html %}{% endif %}
+
+{% if page.show_projects %}
+{% include projects.html %}
+{% endif %}
+
+{% if page.show_clients %}
+{% include clients.html %}
+{% endif %}
+
+{% if false %}
+{% include post_highlights.html %}
+{% endif %}
+
+{% if page.show_statistics %}
+{% include stats.html %}
+{% endif %}
+
+{% if page.show_testimonials %}
+{% include testimonials.html %}
+{% endif %}
+
+{% if page.show_techs %}
+{% include techs.html %}
+{% endif %}

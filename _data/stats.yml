@@ -1,0 +1,15 @@
+- id: service_count
+  name: Services Developed
+  value: 8
+
+- id: infrastructures
+  name: Infrastructures Operational
+  value: 11
+
+- id: migrations
+  name: Migrations handled
+  value: 2
+
+- id: candles
+  name: Candles burnt
+  value: 23

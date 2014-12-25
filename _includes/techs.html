@@ -1,0 +1,11 @@
+<div class="home-clients home-clients-dark">
+	<div class="container">
+		<div class="client-slider">
+      {% for tech in site.data.techs %}
+			<div>
+        <img src="{{ tech.logo }}" class="img-responsive" alt="{{ tech.name }}"/>		
+			</div>
+      {% endfor %}
+		</div>
+  </div>
+</div>

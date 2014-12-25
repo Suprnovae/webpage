@@ -1,0 +1,32 @@
+- name: Something
+  note: Cloud stuff
+  type: width2
+  image: "/images/content/projects/1-1.jpg"
+  tags:
+  - branding
+  - webdesign
+- name: "O&amp;M Online Store"
+  note: Something something darkside
+  image: "/images/content/projects/3.jpg"
+  tags:
+  - illustration
+- name: Mercedes
+  note: Loading cars into airplanes
+  image: "images/content/projects/4.jpg"
+  tags:
+  - branding
+  - uiux
+- name: Dubai
+  note: Airports
+  image: "images/content/projects/5.jpg"
+  tags:
+  - graphic
+  - illustration
+- name: Hello
+  note: Something cool
+  image: "images/content/projects/1-2.jpg"
+  type: width2
+  tags:
+  - branding
+  - webdesign
+

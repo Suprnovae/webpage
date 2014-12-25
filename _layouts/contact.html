@@ -1,0 +1,54 @@
+---
+layout: page
+---
+<!-- GOOGLE MAP -->
+<div id="google-map">
+  <div class="map1">
+    <div class="gmap1">
+      <div id="map1"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT INFO -->
+<div class="container contact-content2">
+  <div class="row">
+    <div class="col-md-6">
+      <h3 class="uppercase">Visit Us</h3>
+      <ul class="c-info">
+        {% for location in site.data.locations %}
+        <li>
+          <h4>{{ location.name }}</h4>
+          <p>
+            {{ location.address }}<br>
+            {{ location.city }} {{ location.postal_code }}<br>
+            T: &nbsp; {{ location.phone_number }}
+            {% if false %} F: &nbsp;+1-745-442-2708 {% endif %}
+          </p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% if page.has_contact_form %}
+    <div class="col-md-6">
+      <h3 class="uppercase">Contact Form</h3>
+      <form class="o-form reduce-10" id="contactForm" action="php/contact.php" method="post">
+        <input name="senderName" id="senderName" required="required" type="text" placeholder="Name*">
+        <input type="email" name="senderEmail" id="senderEmail" required="required" placeholder="Email*">
+        <input type="text" placeholder="website">
+        <textarea name="message" id="message"></textarea>
+        <button type="submit" class="btn-small btn-center">Send</button>
+      </form>
+      <div id="successMessage" class="successmessage">
+        <p><span class="success-ico"><i class="icon-check"></i></span> Thanks for sending your message! We'll get back to you shortly.</p>
+      </div>
+      <div id="failureMessage" class="errormessage">
+        <p><span class="error-ico"><i class="icon-close-circle"></i></span> There was a problem sending your message. Please try again.</p>
+      </div>
+      <div id="incompleteMessage" class="statusMessage">
+        <p>Please complete all the fields in the form before sending.</p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
